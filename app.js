@@ -23,6 +23,7 @@ function limparCampo(){
 // atualizar lista de amigos 
 function atualizarAmigos(){
     let lista = document.getElementById('listaAmigos');
+    lista.innerHTML = '';
     for(let i = 1; i < amigos.length; i++){
     lista.innerHTML += `<li>${amigos[i]}</li>`;
     }
@@ -33,12 +34,11 @@ function sortearAmigo(){
     let index;
     let amigoSorteado;
     let resultado;
-    if(amigos.lenght > 0){
-        index = Math.floor(Math.random()* amigos.length +1);
-        amigoSorteado = amigos[index];
-        resultado = document.getElementById('resultado');
-        resultado.innerHTML = `<li>O amigo secreto sorteado é: ${amigoSorteado}</li>`;
-    }else{
-        adicionarAmigo();
+    if(amigos.lenght == 0){
+       alert('A lista de amigos está vazia');
+       return;
     }
+    let sorteado = amigos[Math.floor(Math.random()* amigos.length)];
+    document.getElementById('amigoSorteado').innerText = `Amigo sorteado: ${sorteado}`;
 }
+ 

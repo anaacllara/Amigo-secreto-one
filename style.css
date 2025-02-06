@@ -16,6 +16,8 @@
 }
 
 body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
     height: 100vh;
     background-color: var(--color-primary);
     display: flex;
@@ -92,6 +94,10 @@ body {
     justify-content: center;
 }
 
+input, button{
+    margin:5px;
+}
+
 /* Estilos de entrada de texto */
 .input-title {
     flex: 1;
@@ -132,6 +138,7 @@ ul {
     font-family: "Inter", sans-serif;
     font-size: 18px;
     margin: 20px 0;
+    padding: 0;
 }
 
 .result-list {
@@ -159,4 +166,11 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+li{
+    background: #f0f0f0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
 }
