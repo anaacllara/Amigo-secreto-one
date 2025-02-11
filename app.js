@@ -57,7 +57,7 @@ function sortearAmigo() {
         atualizarAmigos();
     }
 }
-
+//função que dispara confete ao sortear o amigo
 function dispararConfete() {
     var count = 200;
     var defaults = {
